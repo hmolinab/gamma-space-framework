@@ -286,6 +286,13 @@ where $N(t) \in \mathcal{M}(\Gamma)$ is the external forcing (perturbation, nois
 
 **Remark 13.9 (The role of $N(t)$).** The external forcing $N(t)$ encodes all coupling of the UoC to its environment through $\mathbf{R}$. Its statistical properties (mean, covariance, spectral density) characterize the organizational environment. In the absence of $N(t)$ and with $\gamma > 0$, the EOM guarantees convergence to $P(\Gamma)$ from any initial $\Gamma$ with $\det(\Gamma) > 0$ — a consequence of the Lyapunov analysis of Ch19.
 
+**Remark 13.10 (Transient and configurational phases of the UoC).** The four-term structural reading of §13.8.2 admits a complementary temporal interpretation that clarifies how the Lagrangian relates to two qualitatively distinct phases of UoC dynamics:
+
+- *Configurational phase* ($\det(\Gamma) > 0$, interior of $\mathcal{M}_{\mathrm{adm}}$): the nonlinear adjugate term $\frac{\mu}{2}\,\mathrm{adj}(\Gamma)^T$ dominates the EOM. The UoC sits in—or evolves toward—a stable structural attractor; the dynamics are organized around $P(\Gamma)$.
+- *Transient phase* ($\mathrm{rank}(\Gamma) \leq 2$, boundary configurations on $\partial\mathcal{M}(\Gamma)$): by Lemma 15.1 (Ch15), $\mathrm{adj}(\Gamma) = 0$ identically. The EOM collapses to $\ddot\Gamma + \gamma\dot\Gamma + \Gamma = N(t)$, retaining only the kinetic, damping, and linear-restoring terms. This is the structure of a damped harmonic transient — the natural form for oscillatory and propagating responses of the UoC during reorganization.
+
+Under this reading, the linear physical reductions of Ch15 (the harmonic oscillator, the electromagnetic plane wave, the linearized graviton, the acoustic and Stokes regimes) are not exceptional cases of the Lagrangian. They are the **transient dynamics** the Lagrangian was constructed to describe: how a UoC moves when its source and agency attributes are momentarily inactive ($S = A = 0$) and its purpose is latent (Ch11 §11.7b). The wave-particle duality of classical physics is then naturally read as the duality between **transient** and **configurational** phases of the same underlying UoC—not as a duality of distinct entities. The Lagrangian's three nontrivial terms (inertia, quadratic well, nonlinear attractor) correspond directly to: temporal evolution, linear-transient structure, and configurational equilibrium. See Ch15 §15.1 for the explicit terminological treatment of regimes versus UoCs.
+
 ### 13.8.3 Conservation Law
 
 In the conservative case ($\gamma = 0$, $N = 0$), the Hamiltonian is conserved:
